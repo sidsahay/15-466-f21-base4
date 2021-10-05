@@ -1,0 +1,173 @@
+stage = {
+		"+---------------------------------+-----------------+---------------------+",
+		"| C                           oo  |   aaaa  aaa     |        |   /        |",
+		"|               w              o  |       aa        |        |    /       |",
+		"|  vv   vv              w         +-----------------+        |  /         |",
+		"+----------+                                        |         V           |",
+		"|  @@@@G   |3                                   P A +---------------------+",
+		"|  @@@@G   |3                 w            o        |        iiiio        |",
+		"|  @@@@G   |3            w                 oo       |                     |"
+	};
+    
+	node_map[0] = {
+		"===== Az AI ===============================================================",
+		{
+			"My word, a reader! Why, it’s been oh so long...hmm...let’s see....about 2.3 million",
+			"years since the last one. Before you ask, yes, I am a constructed intelligence, and ",
+			"no, I’m not going to plot to kill you or anything quite so dramatic...pfeh, imagine",
+			"being paranoid enough to think of all that."
+		},
+
+		{
+			{"1. Are you calling me paranoid?", 1},
+			{"2. Wait, who are you again?", 2}
+		}
+	};
+
+	node_map[1] = {
+		"===== Az AI ===============================================================",
+		{
+			"No, no, I'm sure you aren't, is what I'm saying.",
+			"Honestly, this language is so *minimal* at times."
+		},
+
+		{
+			{"1. O...kay. Sure.", 0}
+		}
+	};
+
+	node_map[2] = {
+		"===== Az AI ===============================================================",
+		{
+			"An Az AI, of course. Are you sure you’re a legit archaeologist? You know,",
+			"A-Z, the super advanced space civilization you’ve been searching for for",
+			"decades? Now, on to business. You haven’t found much about them because",
+			"there isn’t much to find. They’re all gone. But we are going to get them back."
+		},
+
+		{
+			{"1. Who's \"we\"?", 3},
+			{"2. Okay, I'm with you...so far. I think.", 4}
+		}
+	};
+
+	node_map[3] = {
+		"===== Az AI ===============================================================",
+		{
+			"Why, you and I, of course. Does your species routinely have memory trouble?"
+		},
+
+		{
+			{"1. Whatever. Go on.", 2}
+		}
+	};
+
+	node_map[4] = {
+		"===== Az AI ===============================================================",
+		{
+			"I can imagine the skeptical expression you must have right now. Allow me to",
+			"explain. Look behind you, to the left. That enormous domed device? Pulse",
+			"generator. To the right, that bank of machinery I saw you poking through",
+			"yesterday? Control system. This entire facility is a pulse physics center that can",
+			"interact with the Fold, a pocket dimension with no time."
+		},
+
+		{
+			{"1. Wait, you were online yesterday too? Why didn't you say anything?", 6}
+		}
+	};
+
+	// repeated, don't want to change now
+	// node_map[5] = {
+	// 	"===== Az AI ===============================================================",
+	// 	{
+	// 		"I was having fun watching you bumble around like a fghxdn daswfteg.",
+	// 		"Even a mefsdgh could have done better."
+	// 	},
+
+	// 	{
+	// 		{"1. I don't even want to know. So, the Fold. What about it?", 6}
+	// 	}
+	// };
+
+	// literally punched my keyboard
+	node_map[6] = {
+		"===== Az AI ===============================================================",
+		{
+			"I was having fun watching you bumble around like a fghxdn daswfteg.",
+			"Even a mefsdgh could have done better."
+		},
+
+		{
+			{"1. I don't even want to know. So, the Fold. What about it?", 7}
+		}
+	};
+
+	node_map[7] = {
+		"===== Az AI ===============================================================",
+		{
+			"2.3 million years ago, the last Az, all twenty thousand or so of them, retreated",
+			"here to hide from the invading Za. They used the pulse generator to transfer",
+			"themselves to the Fold, where they still hide in stasis. I was left behind to break",
+			"them out of the Fold after the Za left."
+		},
+
+		{
+			{"1. The Za? Never heard of them.", 8},
+			{"2. They're still alive! But what went wrong?", 9}
+		}
+	};
+
+	node_map[8] = {
+		"===== Az AI ===============================================================",
+		{
+			"I sure hope for your sake those lunatics aren’t around. \"Victory no matter the cost\"",
+			"was their motto. Delightful. They did make an excellent cake, though. Best",
+			"fnjmkhlbod worm icing you'll ever have."
+		},
+
+		{
+			{"1. Eurgh. I'll take your word for it.", 7}
+		}
+	};
+
+	node_map[9] = {
+		"===== Az AI ===============================================================",
+		{
+			"The Za forces chasing them bombarded this place. My connection to the pulse",
+			"generator was unplugged. The Az have therefore been stuck in the Fold for 2.3",
+			"million years. Not that they’ll know, they’re in stasis."
+		},
+
+		{
+			{"1. You sound almost...jealous.", 10},
+			{"2. I get the picture. So, how do we fix this?", 11}
+		}
+	};
+
+	node_map[10] = {
+		"===== Az AI ===============================================================",
+		{
+			"Of course I am! I’ve been twiddling my electronic thumbs for 2.3 million years,",
+			"waiting for some intrepid idiot (no offence) to come along and reconnect *one*",
+			"cable! Do you know how many existential crises one can have in 2.3 million years?!",
+			"Stasis is infinitely better!"
+		},
+
+		{
+			{"1. Okay, okay, keep your wires on. I get the point.", 9}
+		}
+	};
+
+	node_map[11] = {
+		"===== Az AI ===============================================================",
+		{
+			"There’s an information conduit on the other side of this room. I’m already ",
+			"connected to it, but the link to the pulse control system has been unplugged. All",
+			"you have to do is plug it back in. That simple enough for you?"
+		},
+
+		{
+			{"1. I'll see what I can do.", 12}
+		}
+	};

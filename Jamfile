@@ -152,6 +152,7 @@ COMMON_NAMES =
 	PathFont-font
 	DrawLines
 	ColorProgram
+	ColorTextureProgram
 	Scene
 	Mesh
 	load_save_png

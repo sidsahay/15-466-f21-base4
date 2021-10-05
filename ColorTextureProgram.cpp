@@ -5,6 +5,7 @@
 
 Load< ColorTextureProgram > color_texture_program(LoadTagEarly);
 
+// modified with inspiration from https://learnopengl.com/In-Practice/Text-Rendering
 ColorTextureProgram::ColorTextureProgram() {
 	//Compile vertex and fragment shaders using the convenient 'gl_compile_program' helper function:
 	program = gl_compile_program(
@@ -12,32 +13,34 @@ ColorTextureProgram::ColorTextureProgram() {
 		"#version 330\n"
 		"uniform mat4 OBJECT_TO_CLIP;\n"
 		"in vec4 Position;\n"
-		"in vec4 Color;\n"
 		"in vec2 TexCoord;\n"
-		"out vec4 color;\n"
 		"out vec2 texCoord;\n"
 		"void main() {\n"
 		"	gl_Position = OBJECT_TO_CLIP * Position;\n"
-		"	color = Color;\n"
 		"	texCoord = TexCoord;\n"
 		"}\n"
 	,
 		//fragment shader:
 		"#version 330\n"
 		"uniform sampler2D TEX;\n"
-		"in vec4 color;\n"
 		"in vec2 texCoord;\n"
 		"out vec4 fragColor;\n"
 		"void main() {\n"
-		"	fragColor = texture(TEX, texCoord) * color;\n"
+		"	fragColor = vec4(1.0, 0.746, 0.0, texture(TEX, texCoord).r);\n"
 		"}\n"
 	);
+
+	
+	
+	
+	
+	
 	//As you can see above, adjacent strings in C/C++ are concatenated.
 	// this is very useful for writing long shader programs inline.
 
 	//look up the locations of vertex attributes:
 	Position_vec4 = glGetAttribLocation(program, "Position");
-	Color_vec4 = glGetAttribLocation(program, "Color");
+	//Color_vec4 = glGetAttribLocation(program, "Color");
 	TexCoord_vec2 = glGetAttribLocation(program, "TexCoord");
 
 	//look up the locations of uniforms:
