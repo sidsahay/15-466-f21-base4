@@ -2,7 +2,7 @@
 
 Author: Siddharth Sahay (ssahay2)
 
-Design: Possibly Justified is a retro-inspired story-driven RPG (with "terminal CRT" graphics!). You are a space archaeologist, and in a particularly interesting excavation site you find an AI with a plan to rescue an entire civilization...if you can trust it. 
+Design: Possibly Justified is a retro-inspired story-driven RPG (with "terminal CRT" graphics!). You are a space archaeologist, and in a particularly interesting excavation site you find an irritable AI with a plan to rescue an entire civilization...if you can trust it. 
 
 
 Unfortunately, the time available far exceeded ambition as usual, and I was only able to implement the mechanics, and only the first third of the game. Currently, the first dialogue with the AI is complete, and the text-graphics work as well as player movement. There were two more dialogue acts planned after this one depending on what you find in each of the rooms.
